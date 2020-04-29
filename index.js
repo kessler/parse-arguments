@@ -13,14 +13,13 @@ function parseArguments(
 	result = {
 		warnings: [],
 		positional: [],
-		named: {},
-		flags: []
+		named: {}
 	}) {
 
 	if (isString(args)) {
 		args = args.split(' ')
 	}
-	console.log(args)
+	
 	if (args.length === 0) return result
 
 	let part = args[0]
@@ -38,7 +37,7 @@ function parseArguments(
 	if (part.includes('=')) {
 		let [name, value] = part.split('=')
 		if (value === '') {
-			warnings.push(`the named argument "${name} was declared with an equal sign but a value was not detected`)
+			result.warnings.push(`the named argument "${name} was declared with an equal sign but a value was not detected`)
 		}
 		result.named[name] = value
 		return parseArguments(args.slice(1), result)
@@ -46,7 +45,7 @@ function parseArguments(
 
 	const nextPart = args[1]
 	if (!nextPart || isNamedArgumentPart(nextPart)) {
-		result.flags.push(part)
+		result.named[part] = true
 		return parseArguments(args.slice(1), result)
 	}
 

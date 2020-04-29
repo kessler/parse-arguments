@@ -12,7 +12,7 @@ npm i -S @kessler/parse-arguments
 ```js
 const parseArguments = require('@kessler/parse-arguments')
 
-const { positional, named, flags, warnings } = parseArguments('positional --flag --named1 val1 --named2=val2')
+const { positional, named, warnings } = parseArguments('positional --flag --named1 val1 --named2=val2')
 
 // an array works too:
 parseArguments(['positional', '--flag', '--namedArgument', 'namedParam'])
