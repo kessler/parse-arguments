@@ -1,0 +1,28 @@
+{
+  "name": "@kessler/parse-arguments",
+  "version": "1.0.0",
+  "description": "parse command line style positional and named arguments, eg. `cmd positional --name=foo`",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kessler/parse-arguments.git"
+  },
+  "keywords": [
+    "cli",
+    "arguments",
+    "args",
+    "commandline"
+  ],
+  "author": "Yaniv Kessler",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kessler/parse-arguments/issues"
+  },
+  "homepage": "https://github.com/kessler/parse-arguments#readme",
+  "devDependencies": {
+    "ava": "^3.8.1"
+  }
+}
