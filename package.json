@@ -1,6 +1,6 @@
 {
   "name": "@kessler/parse-arguments",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "parse command line style positional and named arguments, eg. `cmd positional --name=foo`",
   "main": "index.js",
   "scripts": {
