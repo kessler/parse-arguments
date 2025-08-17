@@ -1,5 +1,3 @@
-const { isString } = require('util')
-
 module.exports = parseArguments
 
 /**
@@ -16,7 +14,7 @@ function parseArguments(
 		named: {}
 	}) {
 
-	if (isString(args)) {
+	if (typeof args === 'string') {
 		args = args.split(' ')
 	}
 	

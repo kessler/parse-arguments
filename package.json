@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/kessler/parse-arguments#readme",
   "devDependencies": {
-    "ava": "^3.8.1"
+    "ava": "^6.4.1"
   }
 }
